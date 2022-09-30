@@ -22,6 +22,8 @@ int y2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите Y3 точки b...");
 int y3 = Convert.ToInt32(Console.ReadLine());
 
+// формула: N = √[(x1-x2)^ + (y1-y2)^ + (z1-z2)^ ]             ]
+
 int n1 = y1 - x1; Math.Pow(n1, 2);
 int n2 = y2 - x2; Math.Pow(n2, 2);
 int n3 = y3 - x3; Math.Pow(n3, 2);
