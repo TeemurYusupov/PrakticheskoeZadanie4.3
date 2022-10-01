@@ -31,3 +31,18 @@ else
 // Console.WriteLine($"{num[2]}");
 // Console.WriteLine($"{num[3]}");
 // Console.WriteLine($"{num[4]}");
+
+// Console.Clear();
+// int[] array = new int[5];
+// Console.Write("Введите пятизначное число ");
+// int num = Int32.Parse(Console.ReadLine());
+
+// int rev = 0;
+// while (num > 0)
+// {
+//     rev = rev * 10 + num%10;
+//     num=num/10;
+
+// }
+// if(rev == num) Console.Write ("Введенное число является полиандром");
+// else Console.Write ("Введенное число неявляется полиандром");
