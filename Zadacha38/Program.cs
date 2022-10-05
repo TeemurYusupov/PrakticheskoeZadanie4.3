@@ -6,31 +6,32 @@
 Console.Clear();
 int[] array = new int[5];
 int num = array.Length;
-int i = 0;
-int sum = 0;               //переменные  
-int min = 0;
-int max = 0;
 
-while (i < num)
+for (int i = 0; i < num; i++)
 {
     array[i] = new Random().Next(1, 30);
     Console.Write($" {array[i]}");           // заполнение
-    
-    
-    if (array[i] > max)
-    {
-        max = array[i];
-    }                            //поиск макс
-    
-    if (array[i] < max)
-    {
-        min = array[i];         // поиск мин
-    }
-    
-    i++;
 }
-// Console.WriteLine($"/  {max}");
-// Console.WriteLine($"/  {min}");
 
-sum = min + max;
-Console.WriteLine($" / min + max = {sum}");
+int max = array[0];
+int min = array[0];
+int rez = 0;
+
+for (int j = 0; j < num; j++)
+{
+    if (array[j] > max)
+    {
+        max = array[j];
+    }                                    //нахождение максимального значения
+
+    if (array[j] < min)
+    {                               //нахождение минимального значения
+        min = array[j];
+    }
+}
+
+Console.WriteLine();
+Console.WriteLine($"/ max = {max}");
+Console.WriteLine($"/ min = {min}");
+rez = max - min;
+Console.WriteLine($"/ max - min = {rez}");
