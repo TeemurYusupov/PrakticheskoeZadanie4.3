@@ -5,9 +5,13 @@
 
 
 Console.Clear();
-Console.WriteLine("Введите пять любых чисел:");
 
-int[] array = new int[5];
+Console.WriteLine("Введите размер массива");
+int m = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите числа для массива  ");
+int[] array = new int[m];
+
 int nut = 0;
 
 for( int i = 0; i < array.Length; i++ )
@@ -25,4 +29,4 @@ for( int i = 0; i < array.Length; i++ )
 }
 Console.WriteLine();
 Console.WriteLine();
-Console.WriteLine($"               колличество четных чисел = [{nut}]");
+Console.WriteLine($"         колличество положительных чисел = [{nut}]");
